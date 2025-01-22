@@ -22,9 +22,15 @@
             </div>
             <div class="card-body">
             <form action="proses.php" method="post">
+            <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">ID</label>
+                    <input type="text" name="id_produk" class="form-control" id="exampleInputPassword1">
+                </div>
+                
+                
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nama Produk</label>
-                    <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputPassword1" class="form-label">Nama Produk</label>
+                    <input type="text" name="nama_produk" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Harga</label>
@@ -40,7 +46,7 @@
                             $qry_jur = mysqli_query($koneksi,$sql_jur);
                             foreach($qry_jur as $data_jur){
                                 ?>
-                                <option value="<?=$data_jur['id']?>"><?=$data_jur['kategori']?></option>
+                                <option value="<?=$data_jur['id_kategori']?>"><?=$data_jur['nama_kategori']?></option>
                                 <?php
                             }
                         ?>
@@ -48,7 +54,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Foto</label>
-                    <input type="file" name="foto" class="form-control" id="exampleInputPassword1">
+                    <input type="file" name="gambar_produk" class="form-control" id="exampleInputPassword1">
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Submit</button>
