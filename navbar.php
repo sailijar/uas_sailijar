@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="/sailijar2/index.php">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/sailijar2/mahasiswas/index.php">Produk Buku</a>
+          <a class="nav-link active" aria-current="page" href="/uas_sailijar/produk/index.php">Produk Buku</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/sailijar2/jurusan/index.php">Kategori Buku</a>
