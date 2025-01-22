@@ -23,7 +23,7 @@ $upload_foto = move_uploaded_file($nama_foto,"foto/$gambar_produk");
 
 
 #5. mengalihkan halaman
-// header("location:index.php");
+ header("location:index.php");
 ?>
 <script>
     document.location="index.php";

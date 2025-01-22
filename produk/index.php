@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                    <a href="hapus.php?xyz=<?=$data['id_produk']?>" class="btn btn-danger">Hapus</a>
+                                    <a href="hapus.php" class="btn btn-danger">Hapus</a>
                                 </div>
                                 </div>
                             </div>
