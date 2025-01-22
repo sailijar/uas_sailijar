@@ -43,14 +43,11 @@ $data = mysqli_fetch_array($edit)
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">ID</label>
                     <input type="text" value="<?=$data['id_kategori']?>" name="id_kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Nama Kategori</label>
-                    <select name="jabatan" class="form-control" id="">
-                        <option value="">-Pilih Kategori-</option>
-                        <option <?php echo ($data['kategori'] == "kayu") ? 'selected' : '' ?> value="kayu">kayu</option>
-                        <option <?php echo ($data['kategori'] == "besi") ? 'selected' : '' ?> value="besi">besi</option>
-                    </select>
+
+                </div>   
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nama Kategori</label>
+                    <input type="text" value="<?=$data['nama_kategori']?>" name="nama_kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Update</button>
