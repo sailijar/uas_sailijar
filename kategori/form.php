@@ -22,11 +22,10 @@
             </div>
             <div class="card-body">
             <form action="proses.php" method="post">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">ID</label>
-                    <input type="text" name="id_kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                
-                
+            <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">ID</label>
+                    <input type="text" name="id_kategori" class="form-control" id="exampleInputPassword1">
+                </div>
                     <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Nama Kategori</label>
                     <input type="text" name="nama_kategori" class="form-control" id="exampleInputPassword1">

@@ -3,10 +3,10 @@
 include("../koneksi.php");
 
 #2. ambil id yang akan disunting
-$id_kategori = $_GET['id_kategori'];
+$id = $_GET['id'];
 
 #3. mengambil semua record data berdasarkan id yang dipilih
-$ambil = "SELECT * FROM kategori WHERE id_kategori='$id_kategori'";
+$ambil = "SELECT * FROM kategori WHERE id_='$id'";
 
 #4. menjalankan query
 $edit = mysqli_query($koneksi,$ambil);
@@ -42,14 +42,14 @@ $data = mysqli_fetch_array($edit)
                 <input type="hidden" name="id" value="<?=$data['id_kategori']?>">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">ID</label>
-                    <input type="text" value="<?=$data['nidn']?>" name="nidn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" value="<?=$data['id_kategori']?>" name="id_kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Nama Kategori</label>
                     <select name="jabatan" class="form-control" id="">
                         <option value="">-Pilih Kategori-</option>
-                        <option <?php echo ($data['kategori'] == "Full Time") ? 'selected' : '' ?> value="Full Time">Full Time</option>
-                        <option <?php echo ($data['kategori'] == "Part Time") ? 'selected' : '' ?> value="Part Time">Part Time</option>
+                        <option <?php echo ($data['kategori'] == "kayu") ? 'selected' : '' ?> value="kayu">kayu</option>
+                        <option <?php echo ($data['kategori'] == "besi") ? 'selected' : '' ?> value="besi">besi</option>
                     </select>
                 </div>
                 
