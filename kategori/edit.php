@@ -6,7 +6,7 @@ include("../koneksi.php");
 $id = $_GET['id'];
 
 #3. mengambil semua record data berdasarkan id yang dipilih
-$ambil = "SELECT * FROM kategori WHERE id_='$id'";
+$ambil = "SELECT * FROM kategori WHERE id_kategori='$id'";
 
 #4. menjalankan query
 $edit = mysqli_query($koneksi,$ambil);
@@ -20,7 +20,7 @@ $data = mysqli_fetch_array($edit)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Kategori</title>
+    <title>Data kategori</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/all.css">
 </head>
@@ -34,7 +34,7 @@ $data = mysqli_fetch_array($edit)
         <div class="col-8 m-auto">
             <div class="card">
             <div class="card-header">
-                <h3 class="float-start">Form Edit Data Kategori</h3>
+                <h3 class="float-start">Form Edit Data kategori</h3>
                 
             </div>
             <div class="card-body">
@@ -43,12 +43,12 @@ $data = mysqli_fetch_array($edit)
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">ID</label>
                     <input type="text" value="<?=$data['id_kategori']?>" name="id_kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-                </div>   
-                    <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nama Kategori</label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nama kategori</label>
                     <input type="text" value="<?=$data['nama_kategori']?>" name="nama_kategori" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
+                
                 
                 <button type="submit" class="btn btn-primary">Update</button>
             </form>
