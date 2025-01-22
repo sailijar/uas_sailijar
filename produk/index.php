@@ -54,7 +54,7 @@
                         <td><?=$data['nama_produk']?></td>
                         <td><?=$data['harga']?></td>
                         <td><?=$data['kategori']?></td>
-                        <td><?=$data['gambar']?></td>
+                        <td><?=$data['gambar_produk']?></td>
                         <td>
                             <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id_produk']?>"><i class="fa fa-pen-to-square"></i></a>
                             
