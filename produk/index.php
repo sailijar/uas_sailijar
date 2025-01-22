@@ -56,11 +56,14 @@
                         <td><?=$data['kategori']?></td>
                         <td><?=$data['gambar_produk']?></td>
                         <td>
-                            <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id_produk']?>"><i class="fa fa-pen-to-square"></i></a>
                             
+                          <!-- TOMBOL EDIT -->
+                          <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id_produk']?>"><i class="fa fa-pen-to-square"></i></a>
                             <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id_produk']?>">
                             <i class="fa-solid fa-trash"></i>
                             </button>
+
+            
 
                             <!-- Modal -->
                             <div class="modal fade" id="hapus<?=$data['id_produk']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
