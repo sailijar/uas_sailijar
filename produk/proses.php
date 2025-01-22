@@ -9,17 +9,17 @@ $harga = $_POST['harga'];
 $kategori = $_POST['kategori'];
 
 
-$foto = $_FILES['foto']['name'];
+$gambar_produk = $_FILES['gambar_produk']['name'];
 $tmp_foto = $_FILES['foto']['tmp_name'];
 
 #3. menulis query
 $simpan = "INSERT INTO produk (id,nama,harga,kategori,foto) VALUES ('$id','$nama',
-'$harga','$kategori','$foto')";
+'$harga','$kategori','$gambar_produk')";
 
 #4. jalankan query
 $proses = mysqli_query($koneksi, $simpan);
 
-$upload_foto = move_uploaded_file($tmp_foto,"foto/$foto");
+$upload_foto = move_uploaded_file($tmp_foto,"foto/$gambar_produk");
 
 
 #5. mengalihkan halaman
